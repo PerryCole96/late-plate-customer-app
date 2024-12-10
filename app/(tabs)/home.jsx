@@ -254,7 +254,6 @@ const Home = () => {
   return (
     <SafeAreaView className="flex-1">
       <View className="flex-1 bg-white">
-        {/* Map */}
         <MapView initialRegion={tempInitialLocation} style={styles.map}>
           <Marker coordinate={tempInitialLocation} title="You are here">
             <Image
@@ -277,8 +276,6 @@ const Home = () => {
             />
           ))}
         </MapView>
-
-        {/* Open Filters Button */}
         <TouchableOpacity
           className="absolute top-2.5 left-2.5 z-10 bg-[#3772FF] p-2.5 rounded-md"
           onPress={togglePanel}
@@ -287,16 +284,12 @@ const Home = () => {
             {isPanelVisible ? "Hide Filters" : "Show Filters"}
           </Text>
         </TouchableOpacity>
-
-        {/* Sign Out Button */}
         <TouchableOpacity
           className="absolute top-2.5 right-2.5 z-10 bg-red-500 p-2.5 rounded-md"
           onPress={signOut}
         >
           <Text className="text-white font-bold">Sign Out</Text>
         </TouchableOpacity>
-
-        {/* Sliding Panel */}
         <Animated.View
           style={[
             styles.slidingPanel,
@@ -314,8 +307,6 @@ const Home = () => {
             </TouchableOpacity>
 
             <Text className="text-lg font-bold mb-2.5">Filter Options</Text>
-
-            {/* Availability Dropdown */}
             <DropDownPicker
               open={openAvailabilityDropdown}
               value={availabilityDropDownValue}
@@ -331,8 +322,6 @@ const Home = () => {
               dropDownStyle={styles.dropdownList}
               zIndex={3}
             />
-
-            {/* Party Size Dropdown */}
             {availabilityDropDownValue !== "all" && (
               <DropDownPicker
                 open={openPartySizeDropdown}
@@ -349,8 +338,6 @@ const Home = () => {
                 zIndex={2}
               />
             )}
-
-            {/* Cuisine Dropdown */}
             <DropDownPicker
               open={openCuisineDropdown}
               value={selectedCuisine}
@@ -364,8 +351,6 @@ const Home = () => {
             />
           </View>
         </Animated.View>
-
-        {/* Restaurant List Heading and List */}
         <Text className="text-2xl font-bold mt-5 mb-2.5 text-center">
           Restaurant List
         </Text>
