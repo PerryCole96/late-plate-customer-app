@@ -3,6 +3,11 @@
 Late Plate is a collaborative project developed by our assigned group during the final stage of the Northcoders bootcamp. Designed to simulate a real working environment, the project allowed us to gain valuable exposure to **Agile practices**, including participation in **stand-ups**, **sprint planning**, and regular feature reviews. This helped us efficiently deliver the **Minimum Viable Product (MVP)**. The app enables users to discover and book nearby restaurants with seamless interaction and real-time features.
 
 The app is built using **React Native**, **Expo Router**, and **Supabase** to handle user authentication, dynamic navigation, and real-time restaurant bookings. **Supabase RPCs** power the app's core functionality, including table availability checks, filtering, and making reservations.
+---
+
+Demo Video
+
+Watch the demo video for the app and its accompanying website [here](https://northcoders.com/project-phase/late-plate)
 
 ---
 
